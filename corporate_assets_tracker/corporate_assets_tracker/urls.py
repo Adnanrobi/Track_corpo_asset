@@ -6,5 +6,6 @@ urlpatterns = [
     path('companies/', include('companies.urls')),
     path('employees/', include('employees.urls')),
     path('devices/', include('devices.urls')),
-    # Add other URL patterns for your project
+    path('api/', include('devices.api_urls')),  # Include the API URLs from the 'devices' app
 ]
+
