@@ -1,0 +1,7 @@
+<h1>{{ device.device_type }} - {{ device.model }}</h1>
+
+<!-- Add a button to simulate payment -->
+<form method="post" action="{% url 'simulate_payment' device_id=device.id %}">
+  {% csrf_token %}
+  <button type="submit">Simulate Payment</button>
+</form>
